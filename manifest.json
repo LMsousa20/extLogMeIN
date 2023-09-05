@@ -1,0 +1,26 @@
+{
+    "name": "MODIFICANDO O LOGMEIN",
+    "version": "0.0.0.11",
+    "manifest_version": 3,
+    "description": "Teste do Lucas M",
+    "action": {
+        "default_popup": "popup/popup.html"
+    },    
+    "content_scripts": [
+        {
+            "matches": [
+              "https://secure.logmeinrescue.com/BR/AdminCenter/*"
+            ],
+            "js": ["jquery.js","main.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["images/*.jpeg"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+    
+
+
+}
